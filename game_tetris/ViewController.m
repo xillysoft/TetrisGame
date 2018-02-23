@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <SpriteKit/SpriteKit.h>
 
 @interface ViewController ()
-
+@property SKView *skView;
 @end
 
 @implementation ViewController
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _skView = (SKView *) self.view;
+
 }
 
 

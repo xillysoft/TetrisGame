@@ -13,6 +13,10 @@
 		61EE3B3B203A78A400BAAB7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61EE3B39203A78A400BAAB7F /* Main.storyboard */; };
 		61EE3B3D203A78A400BAAB7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61EE3B3C203A78A400BAAB7F /* Assets.xcassets */; };
 		61EE3B40203A78A400BAAB7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61EE3B3E203A78A400BAAB7F /* LaunchScreen.storyboard */; };
+		61EE3B49203A790900BAAB7F /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EE3B48203A790900BAAB7F /* SpriteKit.framework */; };
+		61EE3B4C203A796500BAAB7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EE3B4B203A796500BAAB7F /* GameScene.m */; };
+		61EE3B4F203A798800BAAB7F /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EE3B4E203A798800BAAB7F /* GameBoard.m */; };
+		61EE3B52203A7B2800BAAB7F /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EE3B51203A7B2800BAAB7F /* Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		61EE3B3C203A78A400BAAB7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61EE3B3F203A78A400BAAB7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61EE3B41203A78A400BAAB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61EE3B48203A790900BAAB7F /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		61EE3B4A203A796500BAAB7F /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		61EE3B4B203A796500BAAB7F /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		61EE3B4D203A798800BAAB7F /* GameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoard.h; sourceTree = "<group>"; };
+		61EE3B4E203A798800BAAB7F /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
+		61EE3B50203A7B2800BAAB7F /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = ../Block.h; sourceTree = "<group>"; };
+		61EE3B51203A7B2800BAAB7F /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Block.m; path = ../Block.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61EE3B49203A790900BAAB7F /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 			children = (
 				61EE3B2F203A78A300BAAB7F /* game_tetris */,
 				61EE3B2E203A78A300BAAB7F /* Products */,
+				61EE3B47203A790900BAAB7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +75,12 @@
 				61EE3B34203A78A400BAAB7F /* AppDelegate.m */,
 				61EE3B36203A78A400BAAB7F /* ViewController.h */,
 				61EE3B37203A78A400BAAB7F /* ViewController.m */,
+				61EE3B4A203A796500BAAB7F /* GameScene.h */,
+				61EE3B4B203A796500BAAB7F /* GameScene.m */,
+				61EE3B50203A7B2800BAAB7F /* Block.h */,
+				61EE3B51203A7B2800BAAB7F /* Block.m */,
+				61EE3B4D203A798800BAAB7F /* GameBoard.h */,
+				61EE3B4E203A798800BAAB7F /* GameBoard.m */,
 				61EE3B39203A78A400BAAB7F /* Main.storyboard */,
 				61EE3B3C203A78A400BAAB7F /* Assets.xcassets */,
 				61EE3B3E203A78A400BAAB7F /* LaunchScreen.storyboard */,
@@ -77,6 +96,14 @@
 				61EE3B31203A78A400BAAB7F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61EE3B47203A790900BAAB7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61EE3B48203A790900BAAB7F /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +180,9 @@
 			files = (
 				61EE3B38203A78A400BAAB7F /* ViewController.m in Sources */,
 				61EE3B35203A78A400BAAB7F /* AppDelegate.m in Sources */,
+				61EE3B4F203A798800BAAB7F /* GameBoard.m in Sources */,
+				61EE3B52203A7B2800BAAB7F /* Block.m in Sources */,
+				61EE3B4C203A796500BAAB7F /* GameScene.m in Sources */,
 				61EE3B32203A78A400BAAB7F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
